@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    border-radius: 60px;
+    font-family: 'Istok Web', sans-serif;
+}
