@@ -1,14 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
 
+html{
+    font-size: 16px;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-weight: 400;
 }
-img {
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, red 10%, 30%, blue 90%);
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
-    width: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+
+}
+
+.container{
+    max-width: 600px;
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    border: 4px solid white;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 40px;
+}
+
+.profile-img{
+    width: 160px;
+    position: relative;
+    top: -80px;
+    left: calc(50% - 80px);
+    filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.25));
+
+}
+
+.info h1,h2 {
+    color: white;
+
+}
+.info h1 {
+    font-size: 2rem;
+
+}
+.info h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+a{ 
+    height: 2.5rem;
+    text-decoration: none;
+    color: prgb(207, 22, 207);
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    padding: 8px;
+    transition: .5s background-color;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    
+}
+
+a:hover{
+    background-color: yellow;
+    
+}
+
+img {
+    width: 24px;
     border-radius: 60px;
-    font-family: 'Istok Web', sans-serif;
+}
+
+@media screen and (max-width: 26.25rem){
+    h1 {
+        font-size: 1.25rem;
+    }
+    h2 {
+        font-size: 0.75rem;
+    }
 }
